@@ -12,7 +12,7 @@ class DeskPet(QWidget):
         self.setWindowFlags(Qt.WindowType.FramelessWindowHint|Qt.WindowType.WindowStaysOnTopHint)
         self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
         #set picture
-        self.pet_images = [QPixmap(f"../DeskTopPet/res/kano_0{i}.png") for i in range(1, 10)]
+        self.pet_images = [QPixmap(f"../res/kano_0{i}.png") for i in range(1, 10)]
         self.current_frame = 0
         
         self.label = QLabel(self)
